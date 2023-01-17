@@ -12,14 +12,9 @@ This is indeed something you cna list on rapidapi. Just run the script and enter
 run the app with :
 
 `gunicorn -w 17 main:app --worker-class uvicorn.workers.UvicornWorker
-`
 
-requirements:
-google-cloud-translate
-fastapi
-gunicorn
-uvicorn
-configparser
-bcrypt
+Requirements:`
+
+`pip install google-cloud-translate fastapi gunicorn uvicorn configparser bcrypt
 
 
