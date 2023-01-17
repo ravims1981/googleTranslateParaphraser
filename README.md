@@ -6,3 +6,19 @@ Youre going to have to find out how to enable your google translate cloud api, i
 Google charges $20 per million characters and gives you $10 worth of translations for free every billing cycle. 
 
 2 hops are good 3 is great. Anything more than that only adds to your bill. 
+
+This is indeed something you cna list on rapidapi. Just run the script and enter yourrapidapi secret and install an ssl on the server. 
+
+run the app with 
+gunicorn -w 17 main:app --worker-class uvicorn.workers.UvicornWorker
+
+
+requirements:
+google-cloud-translate
+fastapi
+gunicorn
+uvicorn
+configparser
+bcrypt
+
+
