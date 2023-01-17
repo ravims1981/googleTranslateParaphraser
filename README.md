@@ -9,9 +9,10 @@ Google charges $20 per million characters and gives you $10 worth of translation
 
 This is indeed something you cna list on rapidapi. Just run the script and enter yourrapidapi secret and install an ssl on the server. 
 
-run the app with 
-gunicorn -w 17 main:app --worker-class uvicorn.workers.UvicornWorker
+run the app with :
 
+`gunicorn -w 17 main:app --worker-class uvicorn.workers.UvicornWorker
+`
 
 requirements:
 google-cloud-translate
